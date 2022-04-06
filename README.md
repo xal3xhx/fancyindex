@@ -1,11 +1,8 @@
 # Docker Image for fancyindex
 
+*modified verson of fraoustin/fancyindex to allow users to use their own themes placed inside the /share folder 
+
 generate a nginx server with fancyindex
-
-You can use client
-
-- ihm on http://127.0.0.1/ (fraoustin/Nginx-Fancyindex-Theme)
-
 
 load when start image load file in
 
@@ -19,7 +16,6 @@ load when start image load file in
 - DISABLE_AUTH (false or true) allows you to disable auth on nginx
 - WEBUSER (default user)
 - WEBPASSWORD (default pass)
-- COLOR (default blue) for web ihm (blue, green, grey, greydark, orange, purple, red)
 
 ## Volume
 
@@ -71,6 +67,5 @@ run image mywebdav
 ## External library
 
 - mdl on https://getmdl.io/
-- Nginx-Fancyindex-Theme on https://github.com/fraoustin/Nginx-Fancyindex-Theme
 
 
