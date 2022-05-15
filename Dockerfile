@@ -1,5 +1,5 @@
 FROM nginx:1.21
-LABEL maintainer "fraoustin@gmail.com"
+LABEL maintainer "mralexh123@gmail.com"
 
 ENV SET_CONTAINER_TIMEZONE false 
 ENV CONTAINER_TIMEZONE ""
@@ -32,12 +32,6 @@ COPY ./src/cmd/addauth.sh /usr/bin/addauth
 COPY ./src/cmd/rmauth.sh /usr/bin/rmauth
 RUN chmod +x /usr/bin/addauth
 RUN chmod +x /usr/bin/rmauth
-
-# add theme
-RUN mkdir /theme
-WORKDIR /theme
-RUN git clone https://github.com/fraoustin/Nginx-Fancyindex-Theme.git
-ENV COLOR "blue" 
 
 RUN mkdir /share
 VOLUME /share
